@@ -1,251 +1,53 @@
 <project type="bio">
   <property name="target.model" value="genomic"/>
   <property name="common.os.prefix" value="common"/>
-  <property name="intermine.properties.file" value="medicmine.properties"/>
+  <property name="intermine.properties.file" value="minimine.properties"/>
   <sources>
 
-    <!-- ├── description_Medicago_sativa.yml -->
-    <source name="medsa-description" type="lis-description" dump="true">
-      <property name="dataSetName" value="Medicago/sativa/about_this_collection"/>
-      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/sativa/about_this_collection/"/>
-      <property name="dataSetDescription" value="Medicago sativa organism and strain information."/>
-      <property name="src.data.dir" location="/data/v2/Medicago/sativa/about_this_collection"/>
+    <!-- Trifolium/pratense/about_this_collection -->
+    <source name="Trifolium-pratense-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Trifolium/pratense/about_this_collection" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Trifolium/pratense/about_this_collection/" />
+      <property name="dataSetDescription" value="Trifolium pratense organism and strain information." />
+      <property name="src.data.dir" location="/data/v2/Trifolium/pratense/about_this_collection" />
     </source>
-
-    <!-- ├── description_Medicago_truncatula.yml -->
-    <source name="medtr-description" type="lis-description" dump="true">
-      <property name="dataSetName" value="Medicago/truncatula/about_this_collection"/>
-      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Medicago/truncatula/about_this_collection/"/>
-      <property name="dataSetDescription" value="Medicago truncatula organism and strain information."/>
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/about_this_collection"/>
-    </source>
-
-    <!-- Medicago/sativa/genomes/XinJiangDaYe.gnm1.12MR -->
-    <source name="XinJiangDaYe.gnm1.12MR" type="lis-fasta" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/sativa/genomes/XinJiangDaYe.gnm1.12MR/" />
+    <!-- Trifolium/pratense/genomes/MilvusB.gnm2.gNmT -->
+    <source name="MilvusB.gnm2.gNmT" type="lis-fasta" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Trifolium/pratense/genomes/MilvusB.gnm2.gNmT/" />
       <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.XinJiangDaYe.gnm1.12MR.yml,medsa.XinJiangDaYe.gnm1.12MR.genome_main.fna.gz" />
-      <property name="src.data.dir" location="/data/v2/Medicago/sativa/genomes/XinJiangDaYe.gnm1.12MR"/>
+      <property name="lis-fasta.includes" value="README.MilvusB.gnm2.gNmT.yml,tripr.MilvusB.gnm2.gNmT.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Trifolium/pratense/genomes/MilvusB.gnm2.gNmT"/>
     </source>
-
-    <!-- Medicago/sativa/annotations/XinJiangDaYe.gnm1.ann1.RKB9 -->
-    <source name="XinJiangDaYe.gnm1.ann1.RKB9" type="lis-annotation" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/sativa/annotations/XinJiangDaYe.gnm1.ann1.RKB9/" />
-      <property name="src.data.dir" location="/data/v2/Medicago/sativa/annotations/XinJiangDaYe.gnm1.ann1.RKB9"/>
-    </source>
-
-    <!-- Medicago/truncatula/genomes/A17.gnm5.MVZ2 -->
-    <source name="A17.gnm5.MVZ2" type="lis-fasta" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/A17.gnm5.MVZ2/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.A17.gnm5.MVZ2.yml,medtr.A17.gnm5.MVZ2.genome_main.fna.gz" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/A17.gnm5.MVZ2"/>
-    </source>
-    <!-- Medicago/truncatula/genomes/A17_HM341.gnm4.2GZ9 -->
-    <source name="A17_HM341.gnm4.2GZ9" type="lis-fasta" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/A17_HM341.gnm4.2GZ9/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.A17_HM341.gnm4.2GZ9.yml,medtr.A17_HM341.gnm4.2GZ9.genome_main.fna.gz" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/A17_HM341.gnm4.2GZ9"/>
-    </source>
-    <!-- Medicago/truncatula/genomes/HM004.gnm1.L7PM -->
-    <source name="HM004.gnm1.L7PM" type="lis-fasta" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM004.gnm1.L7PM/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM004.gnm1.L7PM.yml,medtr.HM004.gnm1.L7PM.genome_main.fna.gz" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM004.gnm1.L7PM"/>
-    </source>
-    <!-- Medicago/truncatula/genomes/HM010.gnm1.YDPY -->
-    <source name="HM010.gnm1.YDPY" type="lis-fasta" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM010.gnm1.YDPY/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM010.gnm1.YDPY.yml,medtr.HM010.gnm1.YDPY.genome_main.fna.gz" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM010.gnm1.YDPY"/>
-    </source>
-    <!-- Medicago/truncatula/genomes/HM022.gnm1.B190 -->
-    <source name="HM022.gnm1.B190" type="lis-fasta" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM022.gnm1.B190/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM022.gnm1.B190.yml,medtr.HM022.gnm1.B190.genome_main.fna.gz" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM022.gnm1.B190"/>
-    </source>
-    <!-- Medicago/truncatula/genomes/HM023.gnm1.FFHH -->
-    <source name="HM023.gnm1.FFHH" type="lis-fasta" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM023.gnm1.FFHH/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM023.gnm1.FFHH.yml,medtr.HM023.gnm1.FFHH.genome_main.fna.gz" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM023.gnm1.FFHH"/>
-    </source>
-    <!-- Medicago/truncatula/genomes/HM034.gnm1.6VW9 -->
-    <source name="HM034.gnm1.6VW9" type="lis-fasta" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM034.gnm1.6VW9/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM034.gnm1.6VW9.yml,medtr.HM034.gnm1.6VW9.genome_main.fna.gz" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM034.gnm1.6VW9"/>
-    </source>
-    <!-- Medicago/truncatula/genomes/HM050.gnm1.9JPP -->
-    <source name="HM050.gnm1.9JPP" type="lis-fasta" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM050.gnm1.9JPP/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM050.gnm1.9JPP.yml,medtr.HM050.gnm1.9JPP.genome_main.fna.gz" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM050.gnm1.9JPP"/>
-    </source>
-    <!-- Medicago/truncatula/genomes/HM056.gnm1.JBKN -->
-    <source name="HM056.gnm1.JBKN" type="lis-fasta" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM056.gnm1.JBKN/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM056.gnm1.JBKN.yml,medtr.HM056.gnm1.JBKN.genome_main.fna.gz" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM056.gnm1.JBKN"/>
-    </source>
-    <!-- Medicago/truncatula/genomes/HM058.gnm1.JVBP -->
-    <source name="HM058.gnm1.JVBP" type="lis-fasta" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM058.gnm1.JVBP/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM058.gnm1.JVBP.yml,medtr.HM058.gnm1.JVBP.genome_main.fna.gz" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM058.gnm1.JVBP"/>
-    </source>
-    <!-- Medicago/truncatula/genomes/HM060.gnm1.V7B2 -->
-    <source name="HM060.gnm1.V7B2" type="lis-fasta" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM060.gnm1.V7B2/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM060.gnm1.V7B2.yml,medtr.HM060.gnm1.V7B2.genome_main.fna.gz" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM060.gnm1.V7B2"/>
-    </source>
-    <!-- Medicago/truncatula/genomes/HM095.gnm1.FBQK -->
-    <source name="HM095.gnm1.FBQK" type="lis-fasta" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM095.gnm1.FBQK/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM095.gnm1.FBQK.yml,medtr.HM095.gnm1.FBQK.genome_main.fna.gz" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM095.gnm1.FBQK"/>
-    </source>
-    <!-- Medicago/truncatula/genomes/HM125.gnm1.GFN2 -->
-    <source name="HM125.gnm1.GFN2" type="lis-fasta" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM125.gnm1.GFN2/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM125.gnm1.GFN2.yml,medtr.HM125.gnm1.GFN2.genome_main.fna.gz" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM125.gnm1.GFN2"/>
-    </source>
-    <!-- Medicago/truncatula/genomes/HM129.gnm1.9HG9 -->
-    <source name="HM129.gnm1.9HG9" type="lis-fasta" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM129.gnm1.9HG9/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM129.gnm1.9HG9.yml,medtr.HM129.gnm1.9HG9.genome_main.fna.gz" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM129.gnm1.9HG9"/>
-    </source>
-    <!-- Medicago/truncatula/genomes/HM185.gnm1.1G05 -->
-    <source name="HM185.gnm1.1G05" type="lis-fasta" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM185.gnm1.1G05/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM185.gnm1.1G05.yml,medtr.HM185.gnm1.1G05.genome_main.fna.gz" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM185.gnm1.1G05"/>
-    </source>
-    <!-- Medicago/truncatula/genomes/HM324.gnm1.SJSJ -->
-    <source name="HM324.gnm1.SJSJ" type="lis-fasta" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM324.gnm1.SJSJ/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.HM324.gnm1.SJSJ.yml,medtr.HM324.gnm1.SJSJ.genome_main.fna.gz" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/HM324.gnm1.SJSJ"/>
-    </source>
-    <!-- Medicago/truncatula/genomes/R108.gnmHiC_1.7RWS -->
-    <source name="R108.gnmHiC_1.7RWS" type="lis-fasta" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/genomes/R108.gnmHiC_1.7RWS/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.R108.gnmHiC_1.7RWS.yml,medtr.R108.gnmHiC_1.7RWS.genome_main.fna.gz" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/genomes/R108.gnmHiC_1.7RWS"/>
+    <!-- Trifolium/pratense/annotations/MilvusB.gnm2.ann1.DFgp -->
+    <source name="MilvusB.gnm2.ann1.DFgp" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Trifolium/pratense/annotations/MilvusB.gnm2.ann1.DFgp/" />
+      <property name="src.data.dir" location="/data/v2/Trifolium/pratense/annotations/MilvusB.gnm2.ann1.DFgp"/>
     </source>
     
-    <!-- Medicago/truncatula/annotations/A17.gnm5.ann1_6.L2RX -->
-    <source name="A17.gnm5.ann1_6.L2RX" type="lis-annotation" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/A17.gnm5.ann1_6.L2RX/" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/A17.gnm5.ann1_6.L2RX"/>
+    <!-- Phaseolus/vulgaris/about_this_collection -->
+    <source name="Phaseolus-vulgaris-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Phaseolus/vulgaris/about_this_collection" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/about_this_collection/" />
+      <property name="dataSetDescription" value="Phaseolus vulgaris organism and strain information." />
+      <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/about_this_collection" />
     </source>
-    <!-- Medicago/truncatula/annotations/A17_HM341.gnm4.ann2.G3ZY -->
-    <source name="A17_HM341.gnm4.ann2.G3ZY" type="lis-annotation" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/A17_HM341.gnm4.ann2.G3ZY/" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/A17_HM341.gnm4.ann2.G3ZY"/>
+    <!-- Phaseolus/vulgaris/genomes/G19833.gnm2.fC0g -->
+    <source name="G19833.gnm2.fC0g" type="lis-fasta" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/genomes/G19833.gnm2.fC0g/" />
+      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-fasta.includes" value="README.G19833.gnm2.fC0g.yml,phavu.G19833.gnm2.fC0g.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/genomes/G19833.gnm2.fC0g"/>
     </source>
-    <!-- Medicago/truncatula/annotations/HM004.gnm1.ann1.2XTB -->
-    <source name="HM004.gnm1.ann1.2XTB" type="lis-annotation" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM004.gnm1.ann1.2XTB/" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM004.gnm1.ann1.2XTB"/>
-    </source>
-    <!-- Medicago/truncatula/annotations/HM010.gnm1.ann1.WV9J -->
-    <source name="HM010.gnm1.ann1.WV9J" type="lis-annotation" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM010.gnm1.ann1.WV9J/" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM010.gnm1.ann1.WV9J"/>
-    </source>
-    <!-- Medicago/truncatula/annotations/HM022.gnm1.ann1.6C8N -->
-    <source name="HM022.gnm1.ann1.6C8N" type="lis-annotation" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM022.gnm1.ann1.6C8N/" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM022.gnm1.ann1.6C8N"/>
-    </source>
-    <!-- Medicago/truncatula/annotations/HM023.gnm1.ann1.WZN8 -->
-    <source name="HM023.gnm1.ann1.WZN8" type="lis-annotation" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM023.gnm1.ann1.WZN8/" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM023.gnm1.ann1.WZN8"/>
-    </source>
-    <!-- Medicago/truncatula/annotations/HM034.gnm1.ann1.YR6S -->
-    <source name="HM034.gnm1.ann1.YR6S" type="lis-annotation" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM034.gnm1.ann1.YR6S/" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM034.gnm1.ann1.YR6S"/>
-    </source>
-    <!-- Medicago/truncatula/annotations/HM050.gnm1.ann1.GWRX -->
-    <source name="HM050.gnm1.ann1.GWRX" type="lis-annotation" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM050.gnm1.ann1.GWRX/" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM050.gnm1.ann1.GWRX"/>
-    </source>
-    <!-- Medicago/truncatula/annotations/HM056.gnm1.ann1.CHP6 -->
-    <source name="HM056.gnm1.ann1.CHP6" type="lis-annotation" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM056.gnm1.ann1.CHP6/" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM056.gnm1.ann1.CHP6"/>
-    </source>
-    <!-- Medicago/truncatula/annotations/HM058.gnm1.ann1.LXPZ -->
-    <source name="HM058.gnm1.ann1.LXPZ" type="lis-annotation" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM058.gnm1.ann1.LXPZ/" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM058.gnm1.ann1.LXPZ"/>
-    </source>
-    <!-- Medicago/truncatula/annotations/HM060.gnm1.ann1.H41P -->
-    <source name="HM060.gnm1.ann1.H41P" type="lis-annotation" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM060.gnm1.ann1.H41P/" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM060.gnm1.ann1.H41P"/>
-    </source>
-    <!-- Medicago/truncatula/annotations/HM095.gnm1.ann1.55W4 -->
-    <source name="HM095.gnm1.ann1.55W4" type="lis-annotation" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM095.gnm1.ann1.55W4/" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM095.gnm1.ann1.55W4"/>
-    </source>
-    <!-- Medicago/truncatula/annotations/HM125.gnm1.ann1.KY5W -->
-    <source name="HM125.gnm1.ann1.KY5W" type="lis-annotation" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM125.gnm1.ann1.KY5W/" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM125.gnm1.ann1.KY5W"/>
-    </source>
-    <!-- Medicago/truncatula/annotations/HM129.gnm1.ann1.7FTD -->
-    <source name="HM129.gnm1.ann1.7FTD" type="lis-annotation" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM129.gnm1.ann1.7FTD/" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM129.gnm1.ann1.7FTD"/>
-    </source>
-    <!-- Medicago/truncatula/annotations/HM185.gnm1.ann1.GB3D -->
-    <source name="HM185.gnm1.ann1.GB3D" type="lis-annotation" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM185.gnm1.ann1.GB3D/" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM185.gnm1.ann1.GB3D"/>
-    </source>
-    <!-- Medicago/truncatula/annotations/HM324.gnm1.ann1.SQH2 -->
-    <source name="HM324.gnm1.ann1.SQH2" type="lis-annotation" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM324.gnm1.ann1.SQH2/" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/HM324.gnm1.ann1.SQH2"/>
-    </source>
-    <!-- Medicago/truncatula/annotations/R108.gnmHiC_1.ann1.Y8NH -->
-    <source name="R108.gnmHiC_1.ann1.Y8NH" type="lis-annotation" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/annotations/R108.gnmHiC_1.ann1.Y8NH/" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/annotations/R108.gnmHiC_1.ann1.Y8NH"/>
+    <!-- Phaseolus/vulgaris/annotations/G19833.gnm2.ann1.PB8d -->
+    <source name="G19833.gnm2.ann1.PB8d" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/annotations/G19833.gnm2.ann1.PB8d/" />
+      <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/annotations/G19833.gnm2.ann1.PB8d"/>
     </source>
 
-    <!-- Medicago/truncatula/expression/A17_HM341.gnm4.ann2.expr.RLZY -->
-    <source name="A17_HM341.gnm4.ann2.expr.RLZY" type="lis-expression" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/expression/A17_HM341.gnm4.ann2.expr.RLZY/" />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/expression/A17_HM341.gnm4.ann2.expr.RLZY"/>
-    </source>
 
+
+
+    
     <!-- ############### -->
     <!-- ONTOLOGIES ETC. -->
     <!-- ############### -->
@@ -305,16 +107,6 @@
       <property name="obo.ontology.url" value="http://planteome.org/"/>
       <property name="obo.ontology.licence" value="https://creativecommons.org/licenses/by/4.0/"/>
       <property name="obo.ontology.description" value="The Plant Ontology (PO) is a community resource consisting of standardized terms, definitions, and logical relations describing plant structures and development stages, augmented by a large database of annotations from genomic and phenomic studies."/>
-    </source>
-
-    <!-- plant trait ontology -->
-    <source name="plant-trait-ontology" type="obo">
-      <property name="src.data.file" location="/data/plant-trait-ontology/to.obo"/>
-      <property name="ontology.prefix" value="TO"/>
-      <property name="obo.ontology.name" value="Plant Trait Ontology"/>
-      <property name="obo.ontology.url" value="http://www.obofoundry.org/ontology/to.html"/>
-      <property name="obo.ontology.licence" value="https://creativecommons.org/licenses/by/4.0/"/>
-      <property name="obo.ontology.description" value="A controlled vocabulary of describe phenotypic traits in plants."/>
     </source>
 
     <!-- other species from synteny -->

@@ -36,7 +36,7 @@
   </c:if>
   <div id="header">
     <!-- LIS site nav -->
-    <div style="float:left; margin:5px;">
+    <div style="float:left; margin:10px 5px;">
       <a href="https://legumeinfo.org/"><img src="https://www.legumeinfo.org/assets/img/lis-logo-small.png" alt="LIS - Legume Information System"/></a>
     </div>
     <div style="float:left; margin:5px 10px 0 0; font-family:ProximaNova,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;">
@@ -45,7 +45,7 @@
     </div>
     <!-- /LIS site nav -->
     <!-- IM site header -->
-    <a href="${WEB_PROPERTIES['project.sitePrefix']}" alt="Home" rel="NOFOLLOW"><img id="logo" src="model/images/medicago.png" alt="Logo" /></a>
+    <a href="${WEB_PROPERTIES['project.sitePrefix']}" alt="Home" rel="NOFOLLOW"><img id="logo" src="model/images/minnie-mouse.png" alt="Logo" /></a>
     <h1><html:link href="${WEB_PROPERTIES['project.sitePrefix']}/"><c:out value="${WEB_PROPERTIES['project.title']}" escapeXml="false"/></html:link></h1>
     <p id="version"><fmt:message key="header.version"/> <c:out value="${WEB_PROPERTIES['project.releaseVersion']}" escapeXml="false"/></p>
     <p><c:out value="${WEB_PROPERTIES['project.subTitle']}" escapeXml="false"/></p>

@@ -1,2 +1,3 @@
-# medicmine
-An InterMine for Medicago truncatula
+# minimine
+
+A small collection of genomes and annotation for testing code.
