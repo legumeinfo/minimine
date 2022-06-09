@@ -189,6 +189,15 @@
     </bagdisplayers>
   </class>
 
+  <!-- extends BioEntity but doesn't have organism or strain (should probably be Annotatable) -->
+  <class className="org.intermine.model.bio.ProteinDomain">
+    <fields>
+      <fieldconfig fieldExpr="primaryIdentifier" label="Identifier"/>
+      <fieldconfig fieldExpr="name" label="Name"/>
+      <fieldconfig fieldExpr="description" label="Description"/>
+    </fields>
+  </class>
+
   <class className="org.intermine.model.bio.Ontology">
     <fields>
       <fieldconfig fieldExpr="name"/>
