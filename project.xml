@@ -3,26 +3,6 @@
   <property name="common.os.prefix" value="common"/>
   <property name="intermine.properties.file" value="minimine.properties"/>
   <sources>
-
-    <!-- Trifolium/pratense/about_this_collection -->
-    <source name="Trifolium-pratense-description" type="lis-description" dump="true" >
-      <property name="dataSetName" value="Trifolium/pratense/about_this_collection" />
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Trifolium/pratense/about_this_collection/" />
-      <property name="dataSetDescription" value="Trifolium pratense organism and strain information." />
-      <property name="src.data.dir" location="/data/v2/Trifolium/pratense/about_this_collection" />
-    </source>
-    <!-- Trifolium/pratense/genomes/MilvusB.gnm2.gNmT -->
-    <source name="MilvusB.gnm2.gNmT" type="lis-fasta" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Trifolium/pratense/genomes/MilvusB.gnm2.gNmT/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.MilvusB.gnm2.gNmT.yml,tripr.MilvusB.gnm2.gNmT.genome_main.fna.gz" />
-      <property name="src.data.dir" location="/data/v2/Trifolium/pratense/genomes/MilvusB.gnm2.gNmT"/>
-    </source>
-    <!-- Trifolium/pratense/annotations/MilvusB.gnm2.ann1.DFgp -->
-    <source name="MilvusB.gnm2.ann1.DFgp" type="lis-annotation" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Trifolium/pratense/annotations/MilvusB.gnm2.ann1.DFgp/" />
-      <property name="src.data.dir" location="/data/v2/Trifolium/pratense/annotations/MilvusB.gnm2.ann1.DFgp"/>
-    </source>
     
     <!-- Phaseolus/vulgaris/about_this_collection -->
     <source name="Phaseolus-vulgaris-description" type="lis-description" dump="true" >
@@ -44,10 +24,26 @@
       <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/annotations/G19833.gnm2.ann1.PB8d"/>
     </source>
 
+    <!-- Cicer/arietinum/about_this_collection -->
+    <source name="Cicer-arietinum-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Cicer/arietinum/about_this_collection" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/about_this_collection/" />
+      <property name="dataSetDescription" value="Cicer arietinum organism and strain information." />
+      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/about_this_collection" />
+    </source>
+    <!-- Cicer/arietinum/genomes/CDCFrontier.gnm2.S2FF -->
+    <source name="CDCFrontier.gnm2.S2FF" type="lis-fasta" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/genomes/CDCFrontier.gnm2.S2FF/" />
+      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-fasta.includes" value="README.CDCFrontier.gnm2.S2FF.yml,cicar.CDCFrontier.gnm2.S2FF.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/genomes/CDCFrontier.gnm2.S2FF"/>
+    </source>
+    <!-- Cicer/arietinum/annotations/CDCFrontier.gnm2.ann1.9M1L -->
+    <source name="CDCFrontier.gnm2.ann1.9M1L" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/annotations/CDCFrontier.gnm2.ann1.9M1L/" />
+      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm2.ann1.9M1L"/>
+    </source>
 
-
-
-    
     <!-- ############### -->
     <!-- ONTOLOGIES ETC. -->
     <!-- ############### -->
@@ -59,15 +55,13 @@
       <property name="dataSetDescription" value="LIS gene families"/>
       <property name="src.data.dir" location="/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K"/>
     </source>
-
     <!-- Phytozome gene families -->
     <source name="phytozome_10_2.genefam.descriptors" type="lis-phytozome" dump="true">
       <property name="dataSetName" value="phytozome_10_2.genefam.descriptors"/>
       <property name="dataSetDescription" value="Phytozome gene family descriptions"/>
       <property name="src.data.dir" location="/data/phytozome"/>
     </source>
-
-    <!-- LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/legume.genefam.fam1.M65K.trees_ML_rooted/ -->
+    <!-- LIS gene family trees -->
     <source name="legume.genefam.fam1.M65K.trees_ML_rooted" type="lis-phylotree" dump="true">
       <property name="dataSetName" value="legume.genefam.fam1.M65K.trees_ML_rooted"/>
       <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/legume.genefam.fam1.M65K.trees_ML_rooted/"/>
@@ -99,72 +93,6 @@
       <property name="src.data.file" location="/data/SO-Ontologies/so-simple.obo"/>
     </source>
 
-    <!-- plant ontology -->
-    <source name="plant-ontology" type="obo">
-      <property name="src.data.file" location="/data/plant-ontology/po.obo"/>
-      <property name="ontology.prefix" value="PO"/>
-      <property name="obo.ontology.name" value="Plant Ontology"/>
-      <property name="obo.ontology.url" value="http://planteome.org/"/>
-      <property name="obo.ontology.licence" value="https://creativecommons.org/licenses/by/4.0/"/>
-      <property name="obo.ontology.description" value="The Plant Ontology (PO) is a community resource consisting of standardized terms, definitions, and logical relations describing plant structures and development stages, augmented by a large database of annotations from genomic and phenomic studies."/>
-    </source>
-
-    <!-- other species from synteny -->
-    <source name="aradu-description" type="lis-description" dump="true">
-      <property name="dataSetName" value="Arachis/duranensis/about_this_collection"/>
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Arachis/duranensis/about_this_collection/" />
-      <property name="dataSetDescription" value="Glycine max organism and strain information."/>
-      <property name="src.data.dir" location="/data/v2/Arachis/duranensis/about_this_collection"/>
-    </source>
-    <source name="araip-description" type="lis-description" dump="true">
-      <property name="dataSetName" value="Arachis/ipaensis/about_this_collection"/>
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Arachis/ipaensis/about_this_collection/" />
-      <property name="dataSetDescription" value="Glycine max organism and strain information."/>
-      <property name="src.data.dir" location="/data/v2/Arachis/ipaensis/about_this_collection"/>
-    </source>
-    <source name="cajca-description" type="lis-description" dump="true">
-      <property name="dataSetName" value="Cajanus/cajan/about_this_collection"/>
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cajanus/cajan/about_this_collection/" />
-      <property name="dataSetDescription" value="Glycine cyrtoloba organism and strain information."/>
-      <property name="src.data.dir" location="/data/v2/Cajanus/cajan/about_this_collection"/>
-    </source>
-    <source name="glyma-description" type="lis-description" dump="true">
-      <property name="dataSetName" value="Glycine/max/about_this_collection"/>
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/about_this_collection/" />
-      <property name="dataSetDescription" value="Glycine max organism and strain information."/>
-      <property name="src.data.dir" location="/data/v2/Glycine/max/about_this_collection"/>
-    </source>
-    <source name="lotja-description" type="lis-description" dump="true">
-      <property name="dataSetName" value="Lotus/japonicus/about_this_collection"/>
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Lotus/japonicus/about_this_collection/" />
-      <property name="dataSetDescription" value="Glycine max organism and strain information."/>
-      <property name="src.data.dir" location="/data/v2/Lotus/japonicus/about_this_collection"/>
-    </source>
-    <source name="lupan-description" type="lis-description" dump="true">
-      <property name="dataSetName" value="Lupinus/angustifolius/about_this_collection"/>
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Lupinus/angustifolius/about_this_collection/" />
-      <property name="dataSetDescription" value="Glycine max organism and strain information."/>
-      <property name="src.data.dir" location="/data/v2/Lupinus/angustifolius/about_this_collection"/>
-    </source>
-    <source name="phavu-description" type="lis-description" dump="true">
-      <property name="dataSetName" value="Phaseolus/vulgaris/about_this_collection"/>
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/about_this_collection/" />
-      <property name="dataSetDescription" value="Glycine max organism and strain information."/>
-      <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/about_this_collection"/>
-    </source>
-    <source name="vigan-description" type="lis-description" dump="true">
-      <property name="dataSetName" value="Vigna/angularis/about_this_collection"/>
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/angularis/about_this_collection/" />
-      <property name="dataSetDescription" value="Glycine max organism and strain information."/>
-      <property name="src.data.dir" location="/data/v2/Vigna/angularis/about_this_collection"/>
-    </source>
-    <source name="vigra-description" type="lis-description" dump="true">
-      <property name="dataSetName" value="Vigna/radiata/about_this_collection"/>
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/radiata/about_this_collection/" />
-      <property name="dataSetDescription" value="Glycine max organism and strain information."/>
-      <property name="src.data.dir" location="/data/v2/Vigna/radiata/about_this_collection"/>
-    </source>
-
   </sources>
 
   <!-- ############### -->
@@ -184,8 +112,8 @@
     <post-process name="create-gene-flanking-features"/>
 
     <!-- LIS -->
-    <post-process name="lis-populate-genefamily-size"/>
     <post-process name="lis-populate-publications"/>
+    <post-process name="lis-create-genefamilytally"/>
 
     <!-- VIEWS AND INDEXES -->
     <post-process name="create-location-overlap-index"/>
