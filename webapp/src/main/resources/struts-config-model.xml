@@ -6,7 +6,7 @@
 
 <!-- used by the blast... buttons on object details pages -->
 <action path="/sequenceBlaster"
-	type="org.ncgr.intermine.bio.web.struts.SequenceBlastAction" />
+        type="org.ncgr.intermine.bio.web.struts.SequenceBlastAction" />
 
 <action path="/initSequenceExportOptions"
         type="org.intermine.bio.web.struts.SequenceExportOptionsController"/>
