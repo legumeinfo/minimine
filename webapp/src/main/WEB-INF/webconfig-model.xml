@@ -340,6 +340,33 @@
       <fieldconfig fieldExpr="bestDomainScore" label="Best Domain Score" />
     </fields>
   </class>
+
+  <class className="org.intermine.model.bio.Phylotree">
+    <headerconfig>
+      <titles>
+        <title mainTitles="identifier" numberOfMainTitlesToShow="1" />
+      </titles>
+    </headerconfig>
+    <fields>
+      <fieldconfig fieldExpr="identifier" label="Identifier"/>
+      <fieldconfig fieldExpr="numLeaves" label="No. of leaves" />
+    </fields>
+  </class>
+
+  <class className="org.intermine.model.bio.Phylonode">
+    <headerconfig>
+      <titles>
+        <title mainTitles="identifier" numberOfMainTitlesToShow="1" />
+      </titles>
+    </headerconfig>
+    <fields>
+      <fieldconfig fieldExpr="identifier" label="Identifier"/>
+      <fieldconfig fieldExpr="isRoot" label="is root"/>
+      <fieldconfig fieldExpr="isLeaf" label="is leaf"/>
+      <fieldconfig fieldExpr="length" label="Length"/>
+      <fieldconfig fieldExpr="numChildren" label="No. of children" />
+    </fields>
+  </class>
   
   <class className="org.intermine.model.bio.Pathway">
     <headerconfig>
