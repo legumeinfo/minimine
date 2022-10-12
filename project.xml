@@ -12,10 +12,10 @@
       <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/about_this_collection" />
     </source>
     <!-- Phaseolus/vulgaris/genomes/G19833.gnm2.fC0g -->
-    <source name="G19833.gnm2.fC0g" type="lis-fasta" dump="true">
+    <source name="G19833.gnm2.fC0g" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/genomes/G19833.gnm2.fC0g/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.G19833.gnm2.fC0g.yml,phavu.G19833.gnm2.fC0g.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.G19833.gnm2.fC0g.yml,phavu.G19833.gnm2.fC0g.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/genomes/G19833.gnm2.fC0g"/>
     </source>
     <!-- Phaseolus/vulgaris/annotations/G19833.gnm2.ann1.PB8d -->
@@ -32,10 +32,10 @@
       <property name="src.data.dir" location="/data/v2/Cicer/arietinum/about_this_collection" />
     </source>
     <!-- Cicer/arietinum/genomes/CDCFrontier.gnm2.S2FF -->
-    <source name="CDCFrontier.gnm2.S2FF" type="lis-fasta" dump="true">
+    <source name="CDCFrontier.gnm2.S2FF" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/genomes/CDCFrontier.gnm2.S2FF/" />
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-fasta.includes" value="README.CDCFrontier.gnm2.S2FF.yml,cicar.CDCFrontier.gnm2.S2FF.genome_main.fna.gz" />
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
+      <property name="lis-genome.includes" value="README.CDCFrontier.gnm2.S2FF.yml,cicar.CDCFrontier.gnm2.S2FF.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Cicer/arietinum/genomes/CDCFrontier.gnm2.S2FF"/>
     </source>
     <!-- Cicer/arietinum/annotations/CDCFrontier.gnm2.ann1.9M1L -->
