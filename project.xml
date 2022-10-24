@@ -76,11 +76,23 @@
       <property name="data.source.url" value="ftp://ftp.ebi.ac.uk/pub/databases/interpro/"/>
       <property name="src.data.dir" location="/data/InterPro/"/>
     </source>
+
+    <!-- InterProt2GO -->
     <source name="interpro-go" type="interpro-go">
       <property name="data.source.name" value="InterPro2GO"/>
       <property name="data.source.description" value="Mappings of InterPro entries to Gene Ontology (GO) terms."/>
       <property name="data.source.url" value="ftp://ftp.ebi.ac.uk/pub/databases/interpro/"/>
       <property name="src.data.dir" location="/data/InterPro/ontology/"/>
+    </source>
+
+    <!-- Pfam terms -->
+    <source name="pfam-term" type="pfam-term">
+      <property name="src.data.dir" location="/data/Pfam/"/>
+    </source>
+
+    <!-- PANTHER terms -->
+    <source name="panther-term" type="panther-term">
+      <property name="src.data.dir" location="/data/PANTHER/"/>
     </source>
 
     <!-- gene ontology -->

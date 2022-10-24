@@ -20,6 +20,7 @@ echo -e "#################################################################"
 
 ./gradlew integrate --stacktrace -Psource=interpro
 ./gradlew integrate --stacktrace -Psource=interpro-go
-
+./gradlew integrate --stacktrace -Psource=panther-term
+./gradlew integrate --stacktrace -Psource=pfam-term
 ./gradlew integrate --stacktrace -Psource=go
 ./gradlew integrate --stacktrace -Psource=so
