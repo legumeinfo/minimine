@@ -6,21 +6,26 @@ echo -e "############################ ${LP}MINIMINE${NC} #######################
 echo -e "#################################################################"
 
 ./gradlew integrate --stacktrace -Psource=Phaseolus-vulgaris-description
-./gradlew integrate --stacktrace -Psource=G19833.gnm2.fC0g
-./gradlew integrate --stacktrace -Psource=G19833.gnm2.ann1.PB8d
+./gradlew integrate --stacktrace -Psource=G19833.gnm1.zBnF
+#./gradlew integrate --stacktrace -Psource=G19833.gnm1.ann1.pScz
+./gradlew integrate --stacktrace -Psource=G19833.gnm1.syn.xQ7F
+#./gradlew integrate --stacktrace -Psource=G19833.gnm1.ann1.expr.Negro_jamapa.ORourke_Iniguez_2014
 
 ./gradlew integrate --stacktrace -Psource=Cicer-arietinum-description
-./gradlew integrate --stacktrace -Psource=CDCFrontier.gnm2.S2FF
-./gradlew integrate --stacktrace -Psource=CDCFrontier.gnm2.ann1.9M1L
+./gradlew integrate --stacktrace -Psource=ICC4958.gnm2.bg5m
+./gradlew integrate --stacktrace -Psource=ICC4958.gnm2.ann1.LCVX
+./gradlew integrate --stacktrace -Psource=ICC4958.gnm2.ann1.expr.ICC4958.Singh_Garg_2013
+./gradlew integrate --stacktrace -Psource=ICC4958.gnm2.syn.PdvJ
 
- ./gradlew integrate --stacktrace -Psource=legume.genefam.fam1.M65K
- ./gradlew integrate --stacktrace -Psource=legume.genefam.fam1.M65K.trees_ML_rooted
-
-./gradlew integrate --stacktrace -Psource=phytozome_10_2.genefam.descriptors
-
+./gradlew integrate --stacktrace -Psource=so
+./gradlew integrate --stacktrace -Psource=go
 ./gradlew integrate --stacktrace -Psource=interpro
 ./gradlew integrate --stacktrace -Psource=interpro-go
 ./gradlew integrate --stacktrace -Psource=panther-term
 ./gradlew integrate --stacktrace -Psource=pfam-term
-./gradlew integrate --stacktrace -Psource=go
-./gradlew integrate --stacktrace -Psource=so
+
+#./gradlew integrate --stacktrace -Psource=legume.genefam.fam1.M65K
+#./gradlew integrate --stacktrace -Psource=legume.genefam.fam1.M65K.trees_ML_rooted
+
+./gradlew integrate --stacktrace -Psource=phytozome_10_2.genefam.descriptors
+
