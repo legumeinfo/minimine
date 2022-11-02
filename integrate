@@ -7,9 +7,9 @@ echo -e "#################################################################"
 
 ./gradlew integrate --stacktrace -Psource=Phaseolus-vulgaris-description
 ./gradlew integrate --stacktrace -Psource=G19833.gnm1.zBnF
-#./gradlew integrate --stacktrace -Psource=G19833.gnm1.ann1.pScz
+./gradlew integrate --stacktrace -Psource=G19833.gnm1.ann1.pScz
 ./gradlew integrate --stacktrace -Psource=G19833.gnm1.syn.xQ7F
-#./gradlew integrate --stacktrace -Psource=G19833.gnm1.ann1.expr.Negro_jamapa.ORourke_Iniguez_2014
+./gradlew integrate --stacktrace -Psource=G19833.gnm1.ann1.expr.Negro_jamapa.ORourke_Iniguez_2014
 
 ./gradlew integrate --stacktrace -Psource=Cicer-arietinum-description
 ./gradlew integrate --stacktrace -Psource=ICC4958.gnm2.bg5m
@@ -24,8 +24,8 @@ echo -e "#################################################################"
 ./gradlew integrate --stacktrace -Psource=panther-term
 ./gradlew integrate --stacktrace -Psource=pfam-term
 
-#./gradlew integrate --stacktrace -Psource=legume.genefam.fam1.M65K
-#./gradlew integrate --stacktrace -Psource=legume.genefam.fam1.M65K.trees_ML_rooted
+./gradlew integrate --stacktrace -Psource=legume.genefam.fam1.M65K
+./gradlew integrate --stacktrace -Psource=legume.genefam.fam1.M65K.trees_ML_rooted
 
 ./gradlew integrate --stacktrace -Psource=phytozome_10_2.genefam.descriptors
 
