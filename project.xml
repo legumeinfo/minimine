@@ -63,21 +63,27 @@
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/synteny/ICC4958.gnm2.syn.PdvJ/" />
       <property name="src.data.dir" location="/data/v2/Cicer/arietinum/synteny/ICC4958.gnm2.syn.PdvJ" />
     </source>
+
+    <!-- Phaseolus/vulgaris/gwas/mixed.gwas.DiVittori_Bitocchi_2021 -->
+    <source name="mixed.gwas.DiVittori_Bitocchi_2021" type="lis-gwas" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/gwas/mixed.gwas.DiVittori_Bitocchi_2021/" />
+      <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/gwas/mixed.gwas.DiVittori_Bitocchi_2021" />
+    </source>
+    <!-- Phaseolus/vulgaris/gwas/mixed.gwas.Escobar_Oladzad_2022 -->
+    <source name="mixed.gwas.Escobar_Oladzad_2022" type="lis-gwas" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/gwas/mixed.gwas.Escobar_Oladzad_2022/" />
+      <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/gwas/mixed.gwas.Escobar_Oladzad_2022" />
+    </source>
     
-    <!-- ############### -->
-    <!-- ONTOLOGIES ETC. -->
-    <!-- ############### -->
- 
+    <!-- ############### ONTOLOGIES ETC. ############### -->
     <!-- sequence ontology -->
     <source name="so" type="so">
       <property name="src.data.file" location="/data/SO-Ontologies/Ontology_Files/so-simple.obo"/>
     </source>
-
     <!-- gene ontology -->
     <source name="go" type="go">
       <property name="src.data.file" location="/data/gene-ontology/go-basic.obo"/>
     </source>
-
     <!-- INTERPRO -->
     <source name="interpro" type="interpro">
       <property name="data.source.name" value="InterPro"/>
@@ -85,7 +91,6 @@
       <property name="data.source.url" value="ftp://ftp.ebi.ac.uk/pub/databases/interpro/"/>
       <property name="src.data.dir" location="/data/InterPro/"/>
     </source>
-
     <!-- InterProt2GO -->
     <source name="interpro-go" type="interpro-go">
       <property name="data.source.name" value="InterPro2GO"/>
@@ -93,17 +98,14 @@
       <property name="data.source.url" value="ftp://ftp.ebi.ac.uk/pub/databases/interpro/"/>
       <property name="src.data.dir" location="/data/InterPro/ontology/"/>
     </source>
-
     <!-- Pfam terms -->
     <source name="pfam-term" type="pfam-term">
       <property name="src.data.dir" location="/data/Pfam/"/>
     </source>
-
     <!-- PANTHER terms -->
     <source name="panther-term" type="panther-term">
       <property name="src.data.dir" location="/data/PANTHER/"/>
     </source>
-
     <!-- LIS gene families -->
     <source name="legume.genefam.fam1.M65K" type="lis-genefamily" dump="true">
       <property name="dataSetName" value="legume.genefam.fam1.M65K"/>
@@ -111,7 +113,6 @@
       <property name="dataSetDescription" value="LIS gene families"/>
       <property name="src.data.dir" location="/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K"/>
     </source>
-
     <!-- LIS gene family trees -->
     <source name="legume.genefam.fam1.M65K.trees_ML_rooted" type="lis-phylotree" dump="true">
       <property name="dataSetName" value="legume.genefam.fam1.M65K.trees_ML_rooted"/>
@@ -119,7 +120,6 @@
       <property name="dataSetDescription" value="LIS gene family phylogenetic trees"/>
       <property name="src.data.dir" location="/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/legume.genefam.fam1.M65K.trees_ML_rooted"/>
     </source>
-
     <!-- Phytozome gene families -->
     <source name="phytozome_10_2.genefam.descriptors" type="lis-phytozome" dump="true">
       <property name="dataSetName" value="phytozome_10_2.genefam.descriptors"/>
@@ -129,9 +129,6 @@
     
   </sources>
 
-  <!-- ############### -->
-  <!-- post-processing -->
-  <!-- ############### -->
   
   <post-processing>
     <!-- IM CORE -->
