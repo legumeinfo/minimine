@@ -6,84 +6,108 @@
     
     <!-- Phaseolus/vulgaris/about_this_collection -->
     <source name="Phaseolus-vulgaris-description" type="lis-description" dump="true" >
-      <property name="dataSetName" value="Phaseolus/vulgaris/about_this_collection" />
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/about_this_collection/" />
-      <property name="dataSetDescription" value="Phaseolus vulgaris organism and strain information." />
-      <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/about_this_collection" />
+      <property name="dataSetName" value="Phaseolus/vulgaris/about_this_collection"/>
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/about_this_collection/"/>
+      <property name="dataSetDescription" value="Phaseolus vulgaris organism and strain information."/>
+      <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/about_this_collection"/>
     </source>
     <!-- Phaseolus/vulgaris/genomes/G19833.gnm1.zBnF -->
     <source name="G19833.gnm1.zBnF" type="lis-genome" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/genomes/G19833.gnm1.zBnF/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-genome.includes" value="README.G19833.gnm1.zBnF.yml,phavu.G19833.gnm1.zBnF.genome_main.fna.gz" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/genomes/G19833.gnm1.zBnF/"/>
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome"/>
+      <property name="lis-genome.includes" value="README.G19833.gnm1.zBnF.yml,phavu.G19833.gnm1.zBnF.genome_main.fna.gz"/>
       <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/genomes/G19833.gnm1.zBnF"/>
     </source>
     <!-- Phaseolus/vulgaris/annotations/G19833.gnm1.ann1.pScz -->
     <source name="G19833.gnm1.ann1.pScz" type="lis-annotation" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/annotations/G19833.gnm1.ann1.pScz/" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/annotations/G19833.gnm1.ann1.pScz/"/>
       <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/annotations/G19833.gnm1.ann1.pScz"/>
     </source>
     <!-- Phaseolus/vulgaris/synteny/G19833.gnm1.syn.xQ7F -->
     <source name="G19833.gnm1.syn.xQ7F" type="lis-synteny" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/synteny/G19833.gnm1.syn.xQ7F/" />
-      <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/synteny/G19833.gnm1.syn.xQ7F" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/synteny/G19833.gnm1.syn.xQ7F/"/>
+      <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/synteny/G19833.gnm1.syn.xQ7F"/>
     </source>
     <!-- Phaseolus/vulgaris/expression/G19833.gnm1.ann1.expr.Negro_jamapa.ORourke_Iniguez_2014 -->
     <source name="G19833.gnm1.ann1.expr.Negro_jamapa.ORourke_Iniguez_2014" type="lis-expression" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/expression/G19833.gnm1.ann1.expr.Negro_jamapa.ORourke_Iniguez_2014/" />
-      <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/expression/G19833.gnm1.ann1.expr.Negro_jamapa.ORourke_Iniguez_2014" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/expression/G19833.gnm1.ann1.expr.Negro_jamapa.ORourke_Iniguez_2014/"/>
+      <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/expression/G19833.gnm1.ann1.expr.Negro_jamapa.ORourke_Iniguez_2014"/>
     </source>
     
     <!-- Cicer/arietinum/about_this_collection -->
     <source name="Cicer-arietinum-description" type="lis-description" dump="true" >
-      <property name="dataSetName" value="Cicer/arietinum/about_this_collection" />
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/about_this_collection/" />
-      <property name="dataSetDescription" value="Cicer arietinum organism and strain information." />
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/about_this_collection" />
+      <property name="dataSetName" value="Cicer/arietinum/about_this_collection"/>
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/about_this_collection/"/>
+      <property name="dataSetDescription" value="Cicer arietinum organism and strain information."/>
+      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/about_this_collection"/>
     </source>
     <!-- Cicer/arietinum/genomes/ICC4958.gnm2.bg5m -->
     <source name="ICC4958.gnm2.bg5m" type="lis-genome" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/genomes/ICC4958.gnm2.bg5m/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
-      <property name="lis-genome.includes" value="README.ICC4958.gnm2.bg5m.yml,cicar.ICC4958.gnm2.bg5m.genome_main.fna.gz" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/genomes/ICC4958.gnm2.bg5m/"/>
+      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome"/>
+      <property name="lis-genome.includes" value="README.ICC4958.gnm2.bg5m.yml,cicar.ICC4958.gnm2.bg5m.genome_main.fna.gz"/>
       <property name="src.data.dir" location="/data/v2/Cicer/arietinum/genomes/ICC4958.gnm2.bg5m"/>
     </source>
     <!-- Cicer/arietinum/annotations/ICC4958.gnm2.ann1.LCVX -->
     <source name="ICC4958.gnm2.ann1.LCVX" type="lis-annotation" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/annotations/ICC4958.gnm2.ann1.LCVX/" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/annotations/ICC4958.gnm2.ann1.LCVX/"/>
       <property name="src.data.dir" location="/data/v2/Cicer/arietinum/annotations/ICC4958.gnm2.ann1.LCVX"/>
     </source>
     <!-- Cicer/arietinum/expression/ICC4958.gnm2.ann1.expr.ICC4958.Singh_Garg_2013 -->
     <source name="ICC4958.gnm2.ann1.expr.ICC4958.Singh_Garg_2013" type="lis-expression" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/expression/ICC4958.gnm2.ann1.expr.ICC4958.Singh_Garg_2013/" />
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/expression/ICC4958.gnm2.ann1.expr.ICC4958.Singh_Garg_2013" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/expression/ICC4958.gnm2.ann1.expr.ICC4958.Singh_Garg_2013/"/>
+      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/expression/ICC4958.gnm2.ann1.expr.ICC4958.Singh_Garg_2013"/>
     </source>
     <!-- Cicer/arietinum/synteny/ICC4958.gnm2.syn.PdvJ -->
     <source name="ICC4958.gnm2.syn.PdvJ" type="lis-synteny" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/synteny/ICC4958.gnm2.syn.PdvJ/" />
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/synteny/ICC4958.gnm2.syn.PdvJ" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/synteny/ICC4958.gnm2.syn.PdvJ/"/>
+      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/synteny/ICC4958.gnm2.syn.PdvJ"/>
     </source>
 
-    <!-- Phaseolus/vulgaris/gwas/mixed.gwas.DiVittori_Bitocchi_2021 -->
-    <source name="mixed.gwas.DiVittori_Bitocchi_2021" type="lis-gwas" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/gwas/mixed.gwas.DiVittori_Bitocchi_2021/" />
-      <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/gwas/mixed.gwas.DiVittori_Bitocchi_2021" />
+    <!-- Phaseolus/vulgaris/markers/G19833.gnm1.mrk.BARCBean6K -->
+    <source name="G19833.gnm1.mrk.BARCBean6K" type="lis-markers" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.BARCBean6K/"/>
+      <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.BARCBean6K"/>
     </source>
-    <!-- Phaseolus/vulgaris/gwas/mixed.gwas.Escobar_Oladzad_2022 -->
-    <source name="mixed.gwas.Escobar_Oladzad_2022" type="lis-gwas" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/gwas/mixed.gwas.Escobar_Oladzad_2022/" />
-      <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/gwas/mixed.gwas.Escobar_Oladzad_2022" />
+
+    <!-- Phaseolus/vulgaris/gwas/mixed.gwas.Jain_Poromarto_2019 -->
+    <source name="mixed.gwas.Jain_Poromarto_2019" type="lis-gwas" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/gwas/mixed.gwas.Jain_Poromarto_2019/"/>
+      <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/gwas/mixed.gwas.Jain_Poromarto_2019"/>
+    </source>
+    <!-- Phaseolus/vulgaris/gwas/mixed.gwas.Myers_Wallace_2019 -->
+    <source name="mixed.gwas.Myers_Wallace_2019" type="lis-gwas" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/gwas/mixed.gwas.Myers_Wallace_2019/"/>
+      <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/gwas/mixed.gwas.Myers_Wallace_2019"/>
+    </source>
+    <!-- Phaseolus/vulgaris/gwas/mixed.gwas.Paulino_Almeida_2021 -->
+    <source name="mixed.gwas.Paulino_Almeida_2021" type="lis-gwas" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/gwas/mixed.gwas.Paulino_Almeida_2021/"/>
+      <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/gwas/mixed.gwas.Paulino_Almeida_2021"/>
+    </source>
+    <!-- Phaseolus/vulgaris/gwas/mixed.gwas.Shi_Gepts_2021 -->
+    <source name="mixed.gwas.Shi_Gepts_2021" type="lis-gwas" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/gwas/mixed.gwas.Shi_Gepts_2021/"/>
+      <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/gwas/mixed.gwas.Shi_Gepts_2021"/>
+    </source>
+    <!-- Phaseolus/vulgaris/gwas/mixed.gwas.Tigist_Melis_2019 -->
+    <source name="mixed.gwas.Tigist_Melis_2019" type="lis-gwas" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/gwas/mixed.gwas.Tigist_Melis_2019/"/>
+      <property name="src.data.dir" location="/data/v2/Phaseolus/vulgaris/gwas/mixed.gwas.Tigist_Melis_2019"/>
     </source>
     
-    <!-- ############### ONTOLOGIES ETC. ############### -->
+    <!-- ######################### ONTOLOGIES etc. ######################### -->
+
     <!-- sequence ontology -->
     <source name="so" type="so">
       <property name="src.data.file" location="/data/SO-Ontologies/Ontology_Files/so-simple.obo"/>
     </source>
+
     <!-- gene ontology -->
     <source name="go" type="go">
       <property name="src.data.file" location="/data/gene-ontology/go-basic.obo"/>
     </source>
+
     <!-- INTERPRO -->
     <source name="interpro" type="interpro">
       <property name="data.source.name" value="InterPro"/>
@@ -91,6 +115,7 @@
       <property name="data.source.url" value="ftp://ftp.ebi.ac.uk/pub/databases/interpro/"/>
       <property name="src.data.dir" location="/data/InterPro/"/>
     </source>
+
     <!-- InterProt2GO -->
     <source name="interpro-go" type="interpro-go">
       <property name="data.source.name" value="InterPro2GO"/>
@@ -98,21 +123,55 @@
       <property name="data.source.url" value="ftp://ftp.ebi.ac.uk/pub/databases/interpro/"/>
       <property name="src.data.dir" location="/data/InterPro/ontology/"/>
     </source>
+
     <!-- Pfam terms -->
     <source name="pfam-term" type="pfam-term">
       <property name="src.data.dir" location="/data/Pfam/"/>
     </source>
+
     <!-- PANTHER terms -->
     <source name="panther-term" type="panther-term">
       <property name="src.data.dir" location="/data/PANTHER/"/>
     </source>
+
+    <!-- plant ontology -->
+    <source name="plant-ontology" type="obo">
+      <property name="src.data.file" location="/data/plant-ontology/po.obo"/>
+      <property name="ontology.prefix" value="PO"/>
+      <property name="obo.ontology.name" value="Plant Ontology"/>
+      <property name="obo.ontology.url" value="http://planteome.org/"/>
+      <property name="obo.ontology.licence" value="https://creativecommons.org/licenses/by/4.0/"/>
+      <property name="obo.ontology.description" value="The Plant Ontology (PO) is a community resource consisting of standardized terms, definitions, and logical relations describing plant structures and development stages, augmented by a large database of annotations from genomic and phenomic studies."/>
+    </source>
+
+    <!-- plant trait ontology -->
+    <source name="plant-trait-ontology" type="obo">
+      <property name="src.data.file" location="/data/plant-trait-ontology/to.obo"/>
+      <property name="ontology.prefix" value="TO"/>
+      <property name="obo.ontology.name" value="Plant Trait Ontology"/>
+      <property name="obo.ontology.url" value="http://www.obofoundry.org/ontology/to.html"/>
+      <property name="obo.ontology.licence" value="https://creativecommons.org/licenses/by/4.0/"/>
+      <property name="obo.ontology.description" value="A controlled vocabulary of describe phenotypic traits in plants."/>
+    </source>
+
+    <!-- common bean crop ontology -->
+    <source name="bean-crop-ontology" type="obo">
+      <property name="src.data.file" location="/data/crop-ontology/CO_335.obo"/>
+      <property name="ontology.prefix" value="CO_335"/>
+      <property name="obo.ontology.name" value="Common Bean Crop Ontology"/>
+      <property name="obo.ontology.url" value="https://www.cropontology.org/ontology/CO_335/Common%20Bean"/>
+      <property name="obo.ontology.licence" value="https://creativecommons.org/licenses/by/4.0/"/>
+      <property name="obo.ontology.description" value="A controlled vocabulary to describe crop traits in common bean."/>
+    </source>
+
     <!-- LIS gene families -->
     <source name="legume.genefam.fam1.M65K" type="lis-genefamily" dump="true">
       <property name="dataSetName" value="legume.genefam.fam1.M65K"/>
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/"/>
       <property name="dataSetDescription" value="LIS gene families"/>
       <property name="src.data.dir" location="/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K"/>
     </source>
+
     <!-- LIS gene family trees -->
     <source name="legume.genefam.fam1.M65K.trees_ML_rooted" type="lis-phylotree" dump="true">
       <property name="dataSetName" value="legume.genefam.fam1.M65K.trees_ML_rooted"/>
@@ -120,6 +179,7 @@
       <property name="dataSetDescription" value="LIS gene family phylogenetic trees"/>
       <property name="src.data.dir" location="/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/legume.genefam.fam1.M65K.trees_ML_rooted"/>
     </source>
+
     <!-- Phytozome gene families -->
     <source name="phytozome_10_2.genefam.descriptors" type="lis-phytozome" dump="true">
       <property name="dataSetName" value="phytozome_10_2.genefam.descriptors"/>
@@ -131,10 +191,11 @@
 
   
   <post-processing>
+
     <!-- IM CORE -->
-    <post-process name="do-sources" />
+    <post-process name="do-sources"/>
     <post-process name="create-utr-references"/>
-    <post-process name="create-references" />
+    <post-process name="create-references"/>
     <post-process name="make-spanning-locations"/>
     <post-process name="create-chromosome-locations-and-lengths"/>
     <post-process name="create-intergenic-region-features"/>
@@ -148,11 +209,12 @@
 
     <!-- VIEWS AND INDEXES -->
     <post-process name="create-location-overlap-index"/>
-    <post-process name="create-overlap-view" />
+    <post-process name="create-overlap-view"/>
     <post-process name="create-attribute-indexes"/>
     <post-process name="summarise-objectstore"/>
     <post-process name="create-autocomplete-index"/>
     <post-process name="create-search-index"/>
+
   </post-processing>
 
 </project>
