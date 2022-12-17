@@ -1,4 +1,12 @@
 *~
 *.log
 .gradle
-build
+/webapp/build
+/dbmodel/build/classes
+/dbmodel/build/gen
+/dbmodel/build/generated
+/dbmodel/build/libs
+/dbmodel/build/so_additions.xml
+/dbmodel/build/tmp
+/dbmodel/build/resources/main/*
+!/dbmodel/build/resources/main/genomic_model.xml
