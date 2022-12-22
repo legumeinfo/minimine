@@ -11,20 +11,17 @@
 </class>
 <class name="NonLTRRetrotransposon" extends="Retrotransposon" is-interface="true" term="http://purl.obolibrary.org/obo/SO:0000189"></class>
 <class name="Helitron" extends="TransposableElement" is-interface="true" term="http://purl.obolibrary.org/obo/SO:0000544"></class>
-<class name="ExpressionSample" is-interface="true" term="">
-	<attribute name="tissue" type="java.lang.String"/>
-	<attribute name="num" type="java.lang.Integer"/>
-	<attribute name="identifier" type="java.lang.String"/>
+<class name="ExpressionSource" extends="Annotatable" is-interface="true" term="">
+	<attribute name="sra" type="java.lang.String"/>
 	<attribute name="description" type="java.lang.String"/>
-	<attribute name="replicateGroup" type="java.lang.String"/>
-	<attribute name="treatment" type="java.lang.String"/>
-	<attribute name="bioSample" type="java.lang.String"/>
-	<attribute name="sraExperiment" type="java.lang.String"/>
-	<attribute name="species" type="java.lang.String"/>
-	<attribute name="genotype" type="java.lang.String"/>
-	<attribute name="name" type="java.lang.String"/>
-	<attribute name="developmentStage" type="java.lang.String"/>
-	<reference name="source" referenced-type="ExpressionSource" reverse-reference="samples"/>
+	<attribute name="bioProject" type="java.lang.String"/>
+	<attribute name="unit" type="java.lang.String"/>
+	<attribute name="geoSeries" type="java.lang.String"/>
+	<attribute name="synopsis" type="java.lang.String"/>
+	<reference name="organism" referenced-type="Organism"/>
+	<reference name="strain" referenced-type="Strain"/>
+	<reference name="dataSet" referenced-type="DataSet"/>
+	<collection name="samples" referenced-type="ExpressionSample" reverse-reference="source"/>
 </class>
 <class name="EST" extends="Oligo" is-interface="true" term="http://purl.obolibrary.org/obo/SO:0000345">
 	<collection name="overlappingESTSets" referenced-type="OverlappingESTSet" reverse-reference="ESTs"/>
@@ -100,15 +97,19 @@
 </class>
 <class name="MobileGeneticElement" extends="SequenceFeature" is-interface="true" term="http://purl.obolibrary.org/obo/SO:0001037"></class>
 <class name="MiRNA" extends="NcRNA" is-interface="true" term="http://purl.obolibrary.org/obo/SO:0000276"></class>
-<class name="Trait" is-interface="true" term="https://browser.planteome.org/amigo/term/TO:0000387">
+<class name="ExpressionSample" extends="Annotatable" is-interface="true" term="">
+	<attribute name="tissue" type="java.lang.String"/>
+	<attribute name="num" type="java.lang.Integer"/>
 	<attribute name="description" type="java.lang.String"/>
+	<attribute name="replicateGroup" type="java.lang.String"/>
+	<attribute name="treatment" type="java.lang.String"/>
+	<attribute name="bioSample" type="java.lang.String"/>
+	<attribute name="sraExperiment" type="java.lang.String"/>
+	<attribute name="species" type="java.lang.String"/>
+	<attribute name="genotype" type="java.lang.String"/>
 	<attribute name="name" type="java.lang.String"/>
-	<reference name="qtlStudy" referenced-type="QTLStudy"/>
-	<reference name="gwas" referenced-type="GWAS"/>
-	<reference name="dataSet" referenced-type="DataSet"/>
-	<collection name="qtls" referenced-type="QTL" reverse-reference="trait"/>
-	<collection name="ontologyTerms" referenced-type="OntologyTerm"/>
-	<collection name="gwasResults" referenced-type="GWASResult" reverse-reference="trait"/>
+	<attribute name="developmentStage" type="java.lang.String"/>
+	<reference name="source" referenced-type="ExpressionSource" reverse-reference="samples"/>
 </class>
 <class name="LinkageGroupPosition" is-interface="true" term="">
 	<attribute name="position" type="java.lang.Double"/>
@@ -166,6 +167,11 @@
 	<collection name="dataSets" referenced-type="DataSet"/>
 </class>
 <class name="Retrotransposon" extends="TransposableElement" is-interface="true" term="http://purl.obolibrary.org/obo/SO:0000180"></class>
+<class name="ExpressionValue" extends="java.lang.Object" is-interface="false" term="">
+	<attribute name="value" type="java.lang.Double"/>
+	<reference name="sample" referenced-type="ExpressionSample"/>
+	<reference name="feature" referenced-type="SequenceFeature"/>
+</class>
 <class name="GeneFlankingRegion" extends="SequenceFeature" is-interface="true" term="http://purl.obolibrary.org/obo/SO_0000239">
 	<attribute name="direction" type="java.lang.String" term="http://purl.obolibrary.org/obo/PATO_0000039"/>
 	<attribute name="distance" type="java.lang.String" term="http://purl.obolibrary.org/obo/PATO_0000040"/>
@@ -215,6 +221,14 @@
 	<collection name="dataSets" referenced-type="DataSet"/>
 </class>
 <class name="FivePrimeUTR" extends="UTR" is-interface="true" term="http://purl.obolibrary.org/obo/SO:0000204"></class>
+<class name="QTLStudy" extends="Annotatable" is-interface="true" term="">
+	<attribute name="description" type="java.lang.String"/>
+	<attribute name="genotypes" type="java.lang.String"/>
+	<attribute name="synopsis" type="java.lang.String"/>
+	<reference name="organism" referenced-type="Organism"/>
+	<reference name="dataSet" referenced-type="DataSet"/>
+	<collection name="qtls" referenced-type="QTL" reverse-reference="qtlStudy"/>
+</class>
 <class name="CDS" extends="SequenceFeature" is-interface="true" term="http://purl.obolibrary.org/obo/SO_0000316,http://purl.obolibrary.org/obo/SO:0000316">
 	<attribute name="isPrimary" type="java.lang.Boolean"/>
 	<reference name="protein" referenced-type="Protein" reverse-reference="CDS"/>
@@ -283,15 +297,6 @@
 	<reference name="parent" referenced-type="Phylonode" reverse-reference="children"/>
 	<collection name="children" referenced-type="Phylonode" reverse-reference="parent"/>
 </class>
-<class name="QTLStudy" extends="Annotatable" is-interface="true" term="">
-	<attribute name="description" type="java.lang.String"/>
-	<attribute name="genotypes" type="java.lang.String"/>
-	<attribute name="synopsis" type="java.lang.String"/>
-	<reference name="organism" referenced-type="Organism"/>
-	<reference name="geneticMap" referenced-type="GeneticMap"/>
-	<reference name="dataSet" referenced-type="DataSet"/>
-	<collection name="qtls" referenced-type="QTL" reverse-reference="qtlStudy"/>
-</class>
 <class name="GeneticMap" extends="Annotatable" is-interface="true" term="http://purl.bioontology.org/ontology/EDAM?conceptid=http%3A%2F%2Fedamontology.org%2Fdata_1278">
 	<attribute name="genotypingPlatform" type="java.lang.String"/>
 	<attribute name="description" type="java.lang.String"/>
@@ -331,12 +336,6 @@
 <class name="ChromosomeStructureVariation" extends="SequenceCollection" is-interface="true" term="http://purl.obolibrary.org/obo/SO:1000183"></class>
 <class name="NaturalTransposableElement" extends="TransposableElement" is-interface="true" term="http://purl.obolibrary.org/obo/SO:0000797"></class>
 <class name="ForwardPrimer" extends="Primer" is-interface="true" term="http://purl.obolibrary.org/obo/SO:0000121"></class>
-<class name="ExpressionValue" extends="java.lang.Object" is-interface="false" term="">
-	<attribute name="value" type="java.lang.Double"/>
-	<attribute name="unit" type="java.lang.String"/>
-	<reference name="sample" referenced-type="ExpressionSample"/>
-	<reference name="feature" referenced-type="SequenceFeature"/>
-</class>
 <class name="OntologyRelation" is-interface="true">
 	<attribute name="redundant" type="java.lang.Boolean"/>
 	<attribute name="direct" type="java.lang.Boolean"/>
@@ -453,17 +452,6 @@
 	<reference name="gene" referenced-type="Gene" reverse-reference="regulatoryRegions"/>
 </class>
 <class name="CDNAClone" extends="SequenceFeature" is-interface="true" term="http://purl.obolibrary.org/obo/SO:0000317"></class>
-<class name="ExpressionSource" extends="Annotatable" is-interface="true" term="">
-	<attribute name="sra" type="java.lang.String"/>
-	<attribute name="description" type="java.lang.String"/>
-	<attribute name="bioProject" type="java.lang.String"/>
-	<attribute name="geoSeries" type="java.lang.String"/>
-	<attribute name="synopsis" type="java.lang.String"/>
-	<reference name="organism" referenced-type="Organism"/>
-	<reference name="strain" referenced-type="Strain"/>
-	<reference name="dataSet" referenced-type="DataSet"/>
-	<collection name="samples" referenced-type="ExpressionSample" reverse-reference="source"/>
-</class>
 <class name="TRIMRetrotransposon" extends="Retrotransposon" is-interface="true" term="http://purl.obolibrary.org/obo/SO:0002261"></class>
 <class name="BindingSite" extends="SequenceFeature" is-interface="true" term="http://purl.obolibrary.org/obo/SO:0000409"></class>
 <class name="GWASResult" is-interface="true" term="">
@@ -473,6 +461,15 @@
 	<reference name="trait" referenced-type="Trait" reverse-reference="gwasResults"/>
 	<reference name="dataSet" referenced-type="DataSet"/>
 	<collection name="markers" referenced-type="GeneticMarker" reverse-reference="gwasResults"/>
+</class>
+<class name="Trait" extends="Annotatable" is-interface="true" term="https://browser.planteome.org/amigo/term/TO:0000387">
+	<attribute name="description" type="java.lang.String"/>
+	<attribute name="name" type="java.lang.String"/>
+	<reference name="qtlStudy" referenced-type="QTLStudy"/>
+	<reference name="gwas" referenced-type="GWAS"/>
+	<reference name="dataSet" referenced-type="DataSet"/>
+	<collection name="qtls" referenced-type="QTL" reverse-reference="trait"/>
+	<collection name="gwasResults" referenced-type="GWASResult" reverse-reference="trait"/>
 </class>
 <class name="TransposableElementGene" extends="Gene" is-interface="true" term="http://purl.obolibrary.org/obo/SO:0000111"></class>
 <class name="Protein" extends="BioEntity" is-interface="true" term="http://semanticscience.org/resource/SIO_010043,http://purl.uniprot.org/core/Protein">
