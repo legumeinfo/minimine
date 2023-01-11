@@ -1,7 +1,10 @@
 *~
 *.log
 .gradle
+*.sh
 /webapp/build
+/dbmodel/build/os.common-tgt-items-std-schema.xml
+/dbmodel/build/os.production-schema.xml
 /dbmodel/build/classes
 /dbmodel/build/gen
 /dbmodel/build/generated
