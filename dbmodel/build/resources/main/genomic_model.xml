@@ -39,12 +39,6 @@
 </class>
 <class name="TransposableElement" extends="MobileGeneticElement" is-interface="true" term="http://purl.obolibrary.org/obo/SO:0000101"></class>
 <class name="SnoRNA" extends="NcRNA" is-interface="true" term="http://purl.obolibrary.org/obo/SO:0000275"></class>
-<class name="PanGeneSet" is-interface="true" term="">
-	<attribute name="identifier" type="java.lang.String"/>
-	<reference name="dataSet" referenced-type="DataSet"/>
-	<collection name="genes" referenced-type="Gene" reverse-reference="panGeneSets"/>
-	<collection name="proteins" referenced-type="Protein" reverse-reference="panGeneSets"/>
-</class>
 <class name="Annotatable" is-interface="true">
 	<attribute name="primaryIdentifier" type="java.lang.String" term="http://semanticscience.org/resource/SIO_000673"/>
 	<collection name="ontologyAnnotations" referenced-type="OntologyAnnotation" reverse-reference="subject" term="http://semanticscience.org/resource/SIO_000255"/>
@@ -136,24 +130,6 @@
 	<collection name="crossReferences" referenced-type="CrossReference" reverse-reference="subject" term="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
 	<collection name="dataSets" referenced-type="DataSet" reverse-reference="bioEntities" term="http://semanticscience.org/resource/SIO_001278"/>
 	<collection name="locatedFeatures" referenced-type="Location" reverse-reference="locatedOn"/>
-</class>
-<class name="Gene" extends="SequenceFeature" is-interface="true" term="http://purl.obolibrary.org/obo/SO_0000704,http://purl.obolibrary.org/obo/SO:0000704">
-	<attribute name="briefDescription" type="java.lang.String" term="http://semanticscience.org/resource/SIO_000136"/>
-	<reference name="upstreamIntergenicRegion" referenced-type="IntergenicRegion"/>
-	<reference name="downstreamIntergenicRegion" referenced-type="IntergenicRegion"/>
-	<collection name="flankingRegions" referenced-type="GeneFlankingRegion" reverse-reference="gene"/>
-	<collection name="introns" referenced-type="Intron" reverse-reference="genes"/>
-	<collection name="proteins" referenced-type="Protein" reverse-reference="genes" term="https://semanticscience.org/resource/SIO_010078"/>
-	<collection name="CDSs" referenced-type="CDS" reverse-reference="gene"/>
-	<collection name="exons" referenced-type="Exon" reverse-reference="gene"/>
-	<collection name="pathways" referenced-type="Pathway" reverse-reference="genes"/>
-	<collection name="UTRs" referenced-type="UTR" reverse-reference="gene"/>
-	<collection name="transcripts" referenced-type="Transcript" reverse-reference="gene"/>
-	<collection name="alleles" referenced-type="Allele" reverse-reference="gene"/>
-	<collection name="panGeneSets" referenced-type="PanGeneSet" reverse-reference="genes"/>
-	<collection name="proteinDomains" referenced-type="ProteinDomain" reverse-reference="genes"/>
-	<collection name="geneFamilyAssignments" referenced-type="GeneFamilyAssignment" reverse-reference="gene"/>
-	<collection name="regulatoryRegions" referenced-type="RegulatoryRegion" reverse-reference="gene"/>
 </class>
 <class name="Retrotransposon" extends="TransposableElement" is-interface="true" term="http://purl.obolibrary.org/obo/SO:0000180"></class>
 <class name="ExpressionValue" extends="java.lang.Object" is-interface="false" term="">
@@ -339,6 +315,23 @@
 	<collection name="qtls" referenced-type="QTL" reverse-reference="linkageGroup"/>
 	<collection name="dataSets" referenced-type="DataSet"/>
 </class>
+<class name="Gene" extends="SequenceFeature" is-interface="true" term="http://purl.obolibrary.org/obo/SO_0000704,http://purl.obolibrary.org/obo/SO:0000704">
+	<attribute name="briefDescription" type="java.lang.String" term="http://semanticscience.org/resource/SIO_000136"/>
+	<reference name="upstreamIntergenicRegion" referenced-type="IntergenicRegion"/>
+	<reference name="downstreamIntergenicRegion" referenced-type="IntergenicRegion"/>
+	<collection name="flankingRegions" referenced-type="GeneFlankingRegion" reverse-reference="gene"/>
+	<collection name="transcripts" referenced-type="Transcript" reverse-reference="gene"/>
+	<collection name="introns" referenced-type="Intron" reverse-reference="genes"/>
+	<collection name="proteins" referenced-type="Protein" reverse-reference="genes" term="https://semanticscience.org/resource/SIO_010078"/>
+	<collection name="alleles" referenced-type="Allele" reverse-reference="gene"/>
+	<collection name="CDSs" referenced-type="CDS" reverse-reference="gene"/>
+	<collection name="proteinDomains" referenced-type="ProteinDomain" reverse-reference="genes"/>
+	<collection name="geneFamilyAssignments" referenced-type="GeneFamilyAssignment" reverse-reference="gene"/>
+	<collection name="exons" referenced-type="Exon" reverse-reference="gene"/>
+	<collection name="pathways" referenced-type="Pathway" reverse-reference="genes"/>
+	<collection name="regulatoryRegions" referenced-type="RegulatoryRegion" reverse-reference="gene"/>
+	<collection name="UTRs" referenced-type="UTR" reverse-reference="gene"/>
+</class>
 <class name="ForwardPrimer" extends="Primer" is-interface="true" term="http://purl.obolibrary.org/obo/SO:0000121"></class>
 <class name="OntologyRelation" is-interface="true">
 	<attribute name="redundant" type="java.lang.Boolean"/>
@@ -405,7 +398,6 @@
 	<reference name="sequence" referenced-type="Sequence" term="http://purl.uniprot.org/core/sequence"/>
 	<collection name="geneFamilyAssignments" referenced-type="GeneFamilyAssignment" reverse-reference="protein"/>
 	<collection name="genes" referenced-type="Gene" reverse-reference="proteins" term="http://semanticscience.org/resource/SIO_010079"/>
-	<collection name="panGeneSets" referenced-type="PanGeneSet" reverse-reference="proteins"/>
 	<collection name="proteinMatches" referenced-type="ProteinMatch" reverse-reference="protein"/>
 </class>
 <class name="Phylotree" extends="Annotatable" is-interface="true" term="">
