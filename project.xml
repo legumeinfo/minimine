@@ -38,12 +38,6 @@
       <property name="src.data.dir" location="/home/shokin/data/v2/Phaseolus/vulgaris/expression/G19833.gnm1.ann1.expr.Negro_jamapa.ORourke_Iniguez_2014"/>
     </source>
 
-    <!-- mixed.pan1.X2PC -->
-    <source name="mixed.pan1.X2PC" type="lis-pangene" dump="true" >
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/GENUS/pangenes/mixed.pan1.X2PC/" />
-      <property name="src.data.dir" location="/home/shokin/data/v2/Phaseolus/GENUS/pangenes/mixed.pan1.X2PC" />
-    </source>
-
     <!-- Phaseolus/vulgaris/markers/G19833.gnm1.mrk.BARCBean6K -->
     <source name="G19833.gnm1.mrk.BARCBean6K" type="lis-markers" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.BARCBean6K/"/>
@@ -122,12 +116,6 @@
     <source name="ICC4958.gnm2.syn.PdvJ" type="lis-synteny" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/synteny/ICC4958.gnm2.syn.PdvJ/"/>
       <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/arietinum/synteny/ICC4958.gnm2.syn.PdvJ"/>
-    </source>
-
-    <!-- Cicer.pan1.SV8C -->
-    <source name="Cicer.pan1.SV8C" type="lis-pangene" dump="true" >
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/GENUS/pangenes/Cicer.pan1.SV8C/" />
-      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/GENUS/pangenes/Cicer.pan1.SV8C" />
     </source>
 
     
