@@ -4,13 +4,266 @@
   <property name="intermine.properties.file" value="minimine.properties"/>
   <sources>
     
+    <!-- Aeschynomene/evenia/about_this_collection -->
+    <source name="Aeschynomene-evenia-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Aeschynomene-evenia-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Aeschynomene/evenia/about_this_collection/" />
+      <property name="dataSetDescription" value="Aeschynomene evenia organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Aeschynomene/evenia/about_this_collection" />
+    </source>
+    <!-- Arachis/cardenasii/about_this_collection -->
+    <source name="Arachis-cardenasii-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Arachis-cardenasii-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Arachis/cardenasii/about_this_collection/" />
+      <property name="dataSetDescription" value="Arachis cardenasii organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Arachis/cardenasii/about_this_collection" />
+    </source>
+    <!-- Arachis/duranensis/about_this_collection -->
+    <source name="Arachis-duranensis-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Arachis-duranensis-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Arachis/duranensis/about_this_collection/" />
+      <property name="dataSetDescription" value="Arachis duranensis organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Arachis/duranensis/about_this_collection" />
+    </source>
+    <!-- Arachis/hypogaea/about_this_collection -->
+    <source name="Arachis-hypogaea-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Arachis-hypogaea-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Arachis/hypogaea/about_this_collection/" />
+      <property name="dataSetDescription" value="Arachis hypogaea organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Arachis/hypogaea/about_this_collection" />
+    </source>
+    <!-- Arachis/ipaensis/about_this_collection -->
+    <source name="Arachis-ipaensis-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Arachis-ipaensis-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Arachis/ipaensis/about_this_collection/" />
+      <property name="dataSetDescription" value="Arachis ipaensis organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Arachis/ipaensis/about_this_collection" />
+    </source>
+    <!-- Arachis/stenosperma/about_this_collection -->
+    <source name="Arachis-stenosperma-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Arachis-stenosperma-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Arachis/stenosperma/about_this_collection/" />
+      <property name="dataSetDescription" value="Arachis stenosperma organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Arachis/stenosperma/about_this_collection" />
+    </source>
+    <!-- Cajanus/cajan/about_this_collection -->
+    <source name="Cajanus-cajan-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Cajanus-cajan-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cajanus/cajan/about_this_collection/" />
+      <property name="dataSetDescription" value="Cajanus cajan organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cajanus/cajan/about_this_collection" />
+    </source>
+    <!-- Cercis/canadensis/about_this_collection -->
+    <source name="Cercis-canadensis-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Cercis-canadensis-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cercis/canadensis/about_this_collection/" />
+      <property name="dataSetDescription" value="Cercis canadensis organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cercis/canadensis/about_this_collection" />
+    </source>
+    <!-- Cicer/arietinum/about_this_collection -->
+    <source name="Cicer-arietinum-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Cicer-arietinum-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/about_this_collection/" />
+      <property name="dataSetDescription" value="Cicer arietinum organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/arietinum/about_this_collection" />
+    </source>
+    <!-- Cicer/echinospermum/about_this_collection -->
+    <source name="Cicer-echinospermum-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Cicer-echinospermum-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/echinospermum/about_this_collection/" />
+      <property name="dataSetDescription" value="Cicer echinospermum organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/echinospermum/about_this_collection" />
+    </source>
+    <!-- Cicer/reticulatum/about_this_collection -->
+    <source name="Cicer-reticulatum-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Cicer-reticulatum-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/reticulatum/about_this_collection/" />
+      <property name="dataSetDescription" value="Cicer reticulatum organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/reticulatum/about_this_collection" />
+    </source>
+    <!-- Glycine/cyrtoloba/about_this_collection -->
+    <source name="Glycine-cyrtoloba-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Glycine-cyrtoloba-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/cyrtoloba/about_this_collection/" />
+      <property name="dataSetDescription" value="Glycine cyrtoloba organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Glycine/cyrtoloba/about_this_collection" />
+    </source>
+    <!-- Glycine/D3-tomentella/about_this_collection -->
+    <source name="Glycine-D3-tomentella-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Glycine-D3-tomentella-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/D3-tomentella/about_this_collection/" />
+      <property name="dataSetDescription" value="Glycine D3-tomentella organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Glycine/D3-tomentella/about_this_collection" />
+    </source>
+    <!-- Glycine/dolichocarpa/about_this_collection -->
+    <source name="Glycine-dolichocarpa-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Glycine-dolichocarpa-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/dolichocarpa/about_this_collection/" />
+      <property name="dataSetDescription" value="Glycine dolichocarpa organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Glycine/dolichocarpa/about_this_collection" />
+    </source>
+    <!-- Glycine/falcata/about_this_collection -->
+    <source name="Glycine-falcata-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Glycine-falcata-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/falcata/about_this_collection/" />
+      <property name="dataSetDescription" value="Glycine falcata organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Glycine/falcata/about_this_collection" />
+    </source>
+    <!-- Glycine/max/about_this_collection -->
+    <source name="Glycine-max-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Glycine-max-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/about_this_collection/" />
+      <property name="dataSetDescription" value="Glycine max organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Glycine/max/about_this_collection" />
+    </source>
+    <!-- Glycine/soja/about_this_collection -->
+    <source name="Glycine-soja-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Glycine-soja-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/soja/about_this_collection/" />
+      <property name="dataSetDescription" value="Glycine soja organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Glycine/soja/about_this_collection" />
+    </source>
+    <!-- Glycine/stenophita/about_this_collection -->
+    <source name="Glycine-stenophita-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Glycine-stenophita-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/stenophita/about_this_collection/" />
+      <property name="dataSetDescription" value="Glycine stenophita organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Glycine/stenophita/about_this_collection" />
+    </source>
+    <!-- Glycine/syndetika/about_this_collection -->
+    <source name="Glycine-syndetika-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Glycine-syndetika-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/syndetika/about_this_collection/" />
+      <property name="dataSetDescription" value="Glycine syndetika organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Glycine/syndetika/about_this_collection" />
+    </source>
+    <!-- Lens/culinaris/about_this_collection -->
+    <source name="Lens-culinaris-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Lens-culinaris-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Lens/culinaris/about_this_collection/" />
+      <property name="dataSetDescription" value="Lens culinaris organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Lens/culinaris/about_this_collection" />
+    </source>
+    <!-- Lens/ervoides/about_this_collection -->
+    <source name="Lens-ervoides-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Lens-ervoides-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Lens/ervoides/about_this_collection/" />
+      <property name="dataSetDescription" value="Lens ervoides organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Lens/ervoides/about_this_collection" />
+    </source>
+    <!-- Lotus/japonicus/about_this_collection -->
+    <source name="Lotus-japonicus-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Lotus-japonicus-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Lotus/japonicus/about_this_collection/" />
+      <property name="dataSetDescription" value="Lotus japonicus organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Lotus/japonicus/about_this_collection" />
+    </source>
+    <!-- Lupinus/albus/about_this_collection -->
+    <source name="Lupinus-albus-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Lupinus-albus-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Lupinus/albus/about_this_collection/" />
+      <property name="dataSetDescription" value="Lupinus albus organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Lupinus/albus/about_this_collection" />
+    </source>
+    <!-- Lupinus/angustifolius/about_this_collection -->
+    <source name="Lupinus-angustifolius-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Lupinus-angustifolius-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Lupinus/angustifolius/about_this_collection/" />
+      <property name="dataSetDescription" value="Lupinus angustifolius organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Lupinus/angustifolius/about_this_collection" />
+    </source>
+    <!-- Medicago/polymorpha/about_this_collection -->
+    <source name="Medicago-polymorpha-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Medicago-polymorpha-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/polymorpha/about_this_collection/" />
+      <property name="dataSetDescription" value="Medicago polymorpha organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Medicago/polymorpha/about_this_collection" />
+    </source>
+    <!-- Medicago/ruthenica/about_this_collection -->
+    <source name="Medicago-ruthenica-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Medicago-ruthenica-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/ruthenica/about_this_collection/" />
+      <property name="dataSetDescription" value="Medicago ruthenica organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Medicago/ruthenica/about_this_collection" />
+    </source>
+    <!-- Medicago/sativa/about_this_collection -->
+    <source name="Medicago-sativa-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Medicago-sativa-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/sativa/about_this_collection/" />
+      <property name="dataSetDescription" value="Medicago sativa organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Medicago/sativa/about_this_collection" />
+    </source>
+    <!-- Medicago/truncatula/about_this_collection -->
+    <source name="Medicago-truncatula-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Medicago-truncatula-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/about_this_collection/" />
+      <property name="dataSetDescription" value="Medicago truncatula organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Medicago/truncatula/about_this_collection" />
+    </source>
+    <!-- Phaseolus/acutifolius/about_this_collection -->
+    <source name="Phaseolus-acutifolius-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Phaseolus-acutifolius-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/acutifolius/about_this_collection/" />
+      <property name="dataSetDescription" value="Phaseolus acutifolius organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Phaseolus/acutifolius/about_this_collection" />
+    </source>
+    <!-- Phaseolus/lunatus/about_this_collection -->
+    <source name="Phaseolus-lunatus-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Phaseolus-lunatus-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/lunatus/about_this_collection/" />
+      <property name="dataSetDescription" value="Phaseolus lunatus organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Phaseolus/lunatus/about_this_collection" />
+    </source>
     <!-- Phaseolus/vulgaris/about_this_collection -->
     <source name="Phaseolus-vulgaris-description" type="lis-description" dump="true" >
-      <property name="dataSetName" value="Phaseolus-vulgaris-description"/>
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/about_this_collection/"/>
-      <property name="dataSetDescription" value="Phaseolus vulgaris organism and strain information."/>
-      <property name="src.data.dir" location="/home/shokin/data/v2/Phaseolus/vulgaris/about_this_collection"/>
+      <property name="dataSetName" value="Phaseolus-vulgaris-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/about_this_collection/" />
+      <property name="dataSetDescription" value="Phaseolus vulgaris organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Phaseolus/vulgaris/about_this_collection" />
     </source>
+    <!-- Pisum/sativum/about_this_collection -->
+    <source name="Pisum-sativum-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Pisum-sativum-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Pisum/sativum/about_this_collection/" />
+      <property name="dataSetDescription" value="Pisum sativum organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Pisum/sativum/about_this_collection" />
+    </source>
+    <!-- Trifolium/pratense/about_this_collection -->
+    <source name="Trifolium-pratense-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Trifolium-pratense-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Trifolium/pratense/about_this_collection/" />
+      <property name="dataSetDescription" value="Trifolium pratense organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Trifolium/pratense/about_this_collection" />
+    </source>
+    <!-- Trifolium/subterraneum/about_this_collection -->
+    <source name="Trifolium-subterraneum-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Trifolium-subterraneum-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Trifolium/subterraneum/about_this_collection/" />
+      <property name="dataSetDescription" value="Trifolium subterraneum organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Trifolium/subterraneum/about_this_collection" />
+    </source>
+    <!-- Vigna/angularis/about_this_collection -->
+    <source name="Vigna-angularis-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Vigna-angularis-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/angularis/about_this_collection/" />
+      <property name="dataSetDescription" value="Vigna angularis organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Vigna/angularis/about_this_collection" />
+    </source>
+    <!-- Vigna/radiata/about_this_collection -->
+    <source name="Vigna-radiata-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Vigna-radiata-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/radiata/about_this_collection/" />
+      <property name="dataSetDescription" value="Vigna radiata organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Vigna/radiata/about_this_collection" />
+    </source>
+    <!-- Vigna/unguiculata/about_this_collection -->
+    <source name="Vigna-unguiculata-description" type="lis-description" dump="true" >
+      <property name="dataSetName" value="Vigna-unguiculata-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/unguiculata/about_this_collection/" />
+      <property name="dataSetDescription" value="Vigna unguiculata organism and strain information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Vigna/unguiculata/about_this_collection" />
+    </source>
+
 
     <!-- Phaseolus/vulgaris/genomes/G19833.gnm1.zBnF -->
     <source name="G19833.gnm1.zBnF" type="lis-genome" dump="true">
@@ -84,14 +337,6 @@
     </source>
     
     
-    <!-- Cicer/arietinum/about_this_collection -->
-    <source name="Cicer-arietinum-description" type="lis-description" dump="true" >
-      <property name="dataSetName" value="Cicer-arietinum-description"/>
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/about_this_collection/"/>
-      <property name="dataSetDescription" value="Cicer arietinum organism and strain information."/>
-      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/arietinum/about_this_collection"/>
-    </source>
-
     <!-- Cicer/arietinum/genomes/ICC4958.gnm2.bg5m -->
     <source name="ICC4958.gnm2.bg5m" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/genomes/ICC4958.gnm2.bg5m/"/>
