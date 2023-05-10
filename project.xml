@@ -3,6 +3,14 @@
   <property name="common.os.prefix" value="common"/>
   <property name="intermine.properties.file" value="minimine.properties"/>
   <sources>
+
+    <!-- Phaseolus/GENUS/about_this_collection -->
+    <source name="Phaseolus-description" type="lis-genus-description" dump="true" >
+      <property name="dataSetName" value="Phaseolus-description" />
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/GENUS/about_this_collection/" />
+      <property name="dataSetDescription" value="Phaseolus genus and species information." />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Phaseolus/GENUS/about_this_collection" />
+    </source>
     
     <!-- Aeschynomene/evenia/about_this_collection -->
     <source name="Aeschynomene-evenia-description" type="lis-description" dump="true" >
@@ -336,6 +344,11 @@
       <property name="src.data.dir" location="/home/shokin/data/v2/Phaseolus/vulgaris/maps/DOR364_x_BAT477.map.Blair_Galeano_2012" />
     </source>
     
+    <!-- Phaseolus/GENUS/pangenes/Phaseolus.pan1.X2PC -->
+    <source name="Phaseolus.pan1.X2PC" type="lis-pangene" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/GENUS/pangenes/Phaseolus.pan1.X2PC/"/>
+      <property name="src.data.dir" location="/home/shokin/data/v2/Phaseolus/GENUS/pangenes/Phaseolus.pan1.X2PC"/>
+    </source>
     
     <!-- Cicer/arietinum/genomes/ICC4958.gnm2.bg5m -->
     <source name="ICC4958.gnm2.bg5m" type="lis-genome" dump="true">
