@@ -12,8 +12,7 @@ for SOURCE in sequence-ontology \
                   plant-trait-ontology \
                   common-bean-crop-ontology \
                   legume.genefam.fam1.M65K \
-                  legume.genefam.fam1.M65K.trees_ML_rooted \
-                  phytozome_10_2.genefam.descriptors
+                  legume.genefam.fam1.M65K.trees_ML_rooted
 do
     echo "####"
     echo -e "#### ${LP}${SOURCE}${NC}"
