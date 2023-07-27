@@ -292,13 +292,13 @@
     </source>
 
     <!-- Phaseolus/vulgaris/markers/G19833.gnm1.mrk.BARCBean6K -->
-    <source name="G19833.gnm1.mrk.BARCBean6K.1" type="lis-markers" dump="true">
+    <source name="G19833.gnm1.mrk.BARCBean6K" type="lis-markers" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.BARCBean6K/"/>
       <property name="src.data.dir" location="/home/shokin/v2/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.BARCBean6K"/>
     </source>
 
     <!-- Phaseolus/vulgaris/markers/G19833.gnm1.mrk.Gaitán-Solís_Duque_2002 -->
-    <source name="G19833.gnm1.mrk.Gaitan-Solis_Duque_2002.1" type="lis-markers" dump="true">
+    <source name="G19833.gnm1.mrk.Gaitan-Solis_Duque_2002" type="lis-markers" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.Gaitán-Solís_Duque_2002/" />
       <property name="src.data.dir" location="/home/shokin/v2/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.Gaitán-Solís_Duque_2002" />
     </source>
