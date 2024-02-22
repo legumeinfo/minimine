@@ -215,9 +215,7 @@
   <post-processing>
 
     <post-process name="do-sources"/>
-    <post-process name="create-utr-references"/>
-    <post-process name="create-intergenic-region-features"/>
-    <post-process name="populate-child-features"/>
+    <post-process name="lis-create-intergenic-region-features"/>
     <post-process name="create-gene-flanking-features"/>
     <post-process name="transfer-sequences"/>
 
