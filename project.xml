@@ -111,9 +111,9 @@
       <property name="src.data.dir" location="/home/intermine/data/data-store/Vigna/unguiculata/synteny/IT97K-499-35.gnm1.syn.W3NY"/>
     </source>
 -->    
-    <source name="IT97K-499-35.gnm1.ann1.expr.Yao_Jiang_2016" type="lis-expression" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/unguiculata/expression/IT97K-499-35.gnm1.ann1.expr.Yao_Jiang_2016/"/>
-      <property name="src.data.dir" location="/home/intermine/data/data-store/Vigna/unguiculata/expression/IT97K-499-35.gnm1.ann1.expr.Yao_Jiang_2016"/>
+    <source name="IT97K-499-35.gnm1.ann2.expr.IT97K-499-35.Yao_Jiang_2016" type="lis-expression" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/unguiculata/expression/IT97K-499-35.gnm1.ann2.expr.IT97K-499-35.Yao_Jiang_2016/"/>
+      <property name="src.data.dir" location="/home/intermine/data/data-store/Vigna/unguiculata/expression/IT97K-499-35.gnm1.ann2.expr.IT97K-499-35.Yao_Jiang_2016"/>
     </source>
 
     <source name="IT97K-499-35.gnm1.mrk.Cowpea1MSelectedSNPs" type="lis-markers" dump="true">
@@ -152,14 +152,14 @@
 
     <!-- the rest -->
 
-    <source name="legume.genefam.fam1.M65K" type="lis-genefamily" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/"/>
-      <property name="src.data.dir" location="/home/intermine/data/data-store/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K"/>
+    <source name="legume.fam1.M65K" type="lis-genefamily" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/LEGUMES/Fabaceae/genefamilies/legume.fam1.M65K/"/>
+      <property name="src.data.dir" location="/home/intermine/data/data-store/LEGUMES/Fabaceae/genefamilies/legume.fam1.M65K"/>
     </source>
 
-    <source name="legume.genefam.fam1.M65K.trees_ML_rooted" type="lis-phylotree" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/" />
-      <property name="src.data.dir" location="/home/intermine/data/data-store/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K"/>
+    <source name="legume.fam1.M65K.trees_ML_rooted" type="lis-phylotree" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/LEGUMES/Fabaceae/genefamilies/legume.fam1.M65K/" />
+      <property name="src.data.dir" location="/home/intermine/data/data-store/LEGUMES/Fabaceae/genefamilies/legume.fam1.M65K"/>
     </source>
 
     <source name="so" type="so">
