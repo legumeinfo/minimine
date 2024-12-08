@@ -157,10 +157,12 @@
       <property name="src.data.dir" location="/home/intermine/data/data-store/LEGUMES/Fabaceae/genefamilies/legume.fam1.M65K"/>
     </source>
 
+<!-- comment-out until identifier fixed
     <source name="legume.fam1.M65K.trees_ML_rooted" type="lis-phylotree" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/LEGUMES/Fabaceae/genefamilies/legume.fam1.M65K/" />
       <property name="src.data.dir" location="/home/intermine/data/data-store/LEGUMES/Fabaceae/genefamilies/legume.fam1.M65K"/>
     </source>
+-->
 
     <source name="so" type="so">
       <property name="src.data.file" location="/home/intermine/data/SO-Ontologies/Ontology_Files/so-simple.obo"/>
