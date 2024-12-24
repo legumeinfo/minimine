@@ -111,12 +111,11 @@
       <property name="src.data.dir" location="/home/intermine/data/data-store/Vigna/unguiculata/synteny/IT97K-499-35.gnm1.syn.W3NY"/>
     </source>
 -->
-<!-- TODO: uncomment after identifier fixed
+
     <source name="IT97K-499-35.gnm1.ann2.expr.IT97K-499-35.Yao_Jiang_2016" type="lis-expression" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/unguiculata/expression/IT97K-499-35.gnm1.ann2.expr.IT97K-499-35.Yao_Jiang_2016/"/>
       <property name="src.data.dir" location="/home/intermine/data/data-store/Vigna/unguiculata/expression/IT97K-499-35.gnm1.ann2.expr.IT97K-499-35.Yao_Jiang_2016"/>
     </source>
--->
 
     <source name="IT97K-499-35.gnm1.mrk.Cowpea1MSelectedSNPs" type="lis-markers" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Vigna/unguiculata/markers/IT97K-499-35.gnm1.mrk.Cowpea1MSelectedSNPs/" />
